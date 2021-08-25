@@ -1,9 +1,12 @@
-nextjs-template:
+surf-spots-fe:
   component: "@sls-next/serverless-component@1.18"
   inputs:
-    description: "A template NextJS app deployed on Lambda@Edge"
+    description: "Surf Spot NextJS app front end deployed on Lambda@Edge"
     name:
-      defaultLambda: nextjs-template-app-default
-      apiLambda: nextjs-template-app-api
+      defaultLambda: nextjs-surf-spot-fe-app-default
+      apiLambda: nextjs-surf-spot-fe-app-api
     AccelerateConfiguration:
       AccelerationStatus: Enabled
+    build:
+      env:
+

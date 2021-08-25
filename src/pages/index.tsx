@@ -1,6 +1,14 @@
 import React from "react";
 import { NextPage } from "next";
+import Layout from "../components/Layout";
+import SpotDisplay from "../components/SpotDisplay";
 
-const Homepage: NextPage = () => <div>Hello world</div>;
+const AccountPage = () => (
+  <Layout title="Home | Next.js + TypeScript Example">
+    <div className="flex">
+      < SpotDisplay />
+    </div>
+  </Layout>
+);
 
-export default Homepage;
+export default AccountPage;
